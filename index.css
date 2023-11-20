@@ -27,14 +27,19 @@ button {
   padding: 11px 28px;
   font-weight: 500;
 }
-
+.bigButtonWhite,
 .bigButton {
   font-size: 20px;
   width: max-content;
   display: flex;
   align-items: center;
   padding: 22px 30px;
-  margin-top: 40px;
+}
+
+.bigButtonWhite {
+  color: black;
+  background-color: white;
+  color: #262626;
 }
 
 header {
@@ -102,6 +107,7 @@ header {
   font-size: 1.5em;
   width: 82%;
   line-height: 1.5;
+  margin-bottom: 40px;
 }
 .upArrow {
   height: 12px;
@@ -180,84 +186,76 @@ header {
 .switchFeatureContainer {
   display: flex;
   justify-content: center;
-  margin-top: 90px;
 }
 
 .switchFeature {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(auto, auto);
-  gap: 20px;
-  width: 79%;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  width: 75%;
 }
 
 .switchFeatureBox {
+  border-radius: 40px;
+  padding-top: 70px;
+  padding-left: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 70px 60px;
-  border-radius: 40px;
-  gap: 20px;
-  padding-bottom: 26%;
+  gap: 30px;
   background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: 35%;
-}
-
-.switchFeatureBox:nth-child(2n + 1) {
-  color: white;
-}
-
-.switchFeatureBox:nth-child(3) > button,
-.switchFeatureBox:nth-child(1) > button {
-  background-color: white;
-  color: black;
-}
-
-.switchFeatureBox:nth-child(1) {
-  background-color: #262626;
-  grid-row: 1/3;
-  background-image: url("Asset/decentralizedExange.png");
-}
-
-.switchFeatureBox:nth-child(2) {
-  background-color: #dfe4f9;
-  grid-row: 2/5;
-  background-image: url("Asset/swychServices.png");
-}
-
-.switchFeatureBox:nth-child(3) {
-  background-color: #194bfb;
-  grid-row: 3/6;
-  background-image: url("Asset/earnWithSwych.png");
-}
-
-.switchFeatureBox:nth-child(4) {
-  background-color: #f3f2f5;
-  grid-row: 5/7;
-  background-image: url("Asset/swychToken.png");
-}
-
-.switchFeatureBox:nth-child(5) {
-  background-color: hsla(0, 0%, 100%, 0.1);
-  border: 1px solid #e1e1e5;
-  color: black;
-  grid-row: 6/9;
 }
 
 .switchFeatureTitle {
   font-size: 3em;
-  width: 50%;
   font-weight: 600;
-}
-
-.switchFeatureMegaphone {
-  width: 30px;
+  width: 50%;
 }
 
 .switchFeatureText {
-  width: 83%;
-  font-size: 1.3em;
+  width: 480px;
+  font-size: 20px;
   line-height: 1.4;
-  font-weight: 300;
+}
+
+.switchFeatureColone1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.switchFeatureColone1 > .switchFeatureBox:nth-child(1) {
+  background-color: #262626;
+  color: white;
+  padding-bottom: 190px;
+  background-image: url("/Asset/decentralizedExange.png");
+  background-size: 250px;
+}
+
+.switchFeatureColone1 > .switchFeatureBox:nth-child(2) {
+  background-color: #194bfb;
+  color: white;
+  background-image: url("/Asset/earnWithSwych.png");
+}
+
+.switchFeatureColone1 > .switchFeatureBox:nth-child(3) {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  border: 1px solid #e1e1e5;
+}
+
+.switchFeatureMegaphone {
+  height: 25px;
+}
+
+.switchFeatureColone2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 190px;
+}
+
+.switchFeatureColone2 > .switchFeatureBox:nth-child(1) {
+  background-color: #dfe4f9;
+  background-image: url("Asset/swychServices.png");
+  background-size: 250px;
 }
