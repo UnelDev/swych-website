@@ -310,3 +310,39 @@ header {
 .partnerBoxImage {
   max-width: 345px;
 }
+
+/* -------------------conclusion------------------- */
+.conclusion {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  padding: 10vh 11vw;
+}
+
+.swychConclusionVideo {
+  border-radius: 30px;
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+}
+
+.conclusionText {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.conclusionTitle {
+  color: #194bfb;
+  font-size: 24px;
+}
+
+.conclusionContent {
+  font-size: 3em;
+  font-weight: 600;
+  width: 50%;
+}
