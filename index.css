@@ -6,6 +6,7 @@
 body {
   font-family: Inter, sans-serif;
   background-image: url("Asset/background.webp");
+  overflow-x: hidden;
 }
 
 a,
@@ -280,4 +281,32 @@ header {
   background-image: url("Asset/swychToken.png");
   background-size: 250px;
   padding-bottom: 250px;
+}
+
+/* --------------------partner-------------------- */
+
+.partnerTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.8em;
+  margin-bottom: 60px;
+}
+.partnerContainer {
+  height: 150px;
+  margin-bottom: 30px;
+}
+.partnerBoxBottom,
+.partnerBoxTop {
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  height: 150px;
+  width: 345px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnerBoxImage {
+  max-width: 345px;
 }
