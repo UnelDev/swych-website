@@ -346,3 +346,72 @@ header {
   font-weight: 600;
   width: 50%;
 }
+
+/* --------------------footer-------------------- */
+
+.footer {
+  padding: 5vh 11vw;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swychFooterIconContainer {
+  height: 56px;
+  width: 56px;
+  background-color: #e4e6f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swychFooterIcon {
+  height: 24px;
+}
+
+.swychFooterLogo {
+  height: 24px;
+}
+
+.footerImg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footerImgLink {
+  display: flex;
+  gap: 15px;
+}
+
+.footerTextContainer {
+  display: flex;
+  gap: 150px;
+}
+
+.footerTitle {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footerLink {
+  color: grey;
+  font-weight: 600;
+}
+
+.footerText {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Copyright {
+  color: lightgrey;
+  border-top: 1px solid lightgrey;
+  margin-top: 50px;
+  padding-top: 30px;
+}
